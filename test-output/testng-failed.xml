@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <parameter name="url" value="https://thinking-tester-contact-list.herokuapp.com/"/>
+  <listeners>
+    <listener class-name="utils.Listeners"/>
+  </listeners>
+  <test thread-count="5" name="ChromeTest(failed)">
+    <parameter name="browser" value="chrome"/>
+    <classes>
+      <class name="tests.TC_003_AddContactTest">
+        <methods>
+          <include name="browserLaunchAndUrlLoad"/>
+          <include name="backFeature_Test"/>
+          <include name="testDetails"/>
+          <include name="closeBrowser"/>
+          <include name="createReport"/>
+          <include name="DataCon"/>
+          <include name="Navigtn_Security"/>
+          <include name="UI_Location_Test"/>
+          <include name="DataConClose"/>
+          <include name="Max_Character_Test"/>
+          <include name="closeReport"/>
+          <include name="Toast_Message_Test"/>
+        </methods>
+      </class> <!-- tests.TC_003_AddContactTest -->
+    </classes>
+  </test> <!-- ChromeTest(failed) -->
+</suite> <!-- Failed suite [Suite] -->
